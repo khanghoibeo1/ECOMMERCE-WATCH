@@ -1,0 +1,55 @@
+.contactContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Màu nền nhẹ */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.contactContainer p {
+  font-size: 1.8rem; /* Kích thước chữ lớn để nổi bật nội dung */
+  color: #333; /* Màu chữ đậm */
+  line-height: 1.6; /* Khoảng cách giữa các dòng */
+  max-width: 900px; /* Giới hạn chiều rộng của đoạn văn */
+  font-family: "Georgia", serif; /* Font chữ nghiêng tạo cảm giác cổ điển */
+  padding: 20px;
+  background-color: #fff; /* Nền trắng cho đoạn văn */
+  border-radius: 10px; /* Bo tròn các góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng để tạo chiều sâu */
+}
+
+.contactContainer p::before {
+  content: "“"; /* Thêm ký tự trích dẫn mở */
+  font-size: 3rem; /* Kích thước lớn */
+  color: #ff5757; /* Màu đỏ nổi bật */
+}
+
+.contactContainer p::after {
+  content: "”"; /* Thêm ký tự trích dẫn đóng */
+  font-size: 3rem;
+  color: #ff5757;
+}
+
+.mailBtn {
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 2s forwards;
+}
+
+.mailBtn > button {
+  text-decoration: none;
+  font: 200 2vmax "Roboto";
+  cursor: url("https://img.icons8.com/color/48/000000/edit--v2.png"), pointer;
+  padding: 2vmax;
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
